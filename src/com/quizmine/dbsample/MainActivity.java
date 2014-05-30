@@ -52,4 +52,9 @@ private StudentOperations studentDBoperation;
 		studentDBoperation.close();
 		super.onPause();
 	}
+	@Override
+		public void onBackPressed() {
+			// TODO Auto-generated method stub
+			super.onBackPressed();
+		}
 }
