@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends ListActivity {
 private StudentOperations studentDBoperation;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -51,7 +52,9 @@ private StudentOperations studentDBoperation;
 	protected void onPause() {
 		studentDBoperation.close();
 		super.onPause();
-	}
+	}/*
+	 * Called when activity back
+	 * **/
 	@Override
 		public void onBackPressed() {
 			// TODO Auto-generated method stub
